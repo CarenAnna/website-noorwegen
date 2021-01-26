@@ -1,0 +1,122 @@
+/* Caren Groenhuijzen
+NOVI Hogeschool - Webontwikkeling
+30-04-2020 */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.h2-nav {
+  margin-top: 20px;
+  margin-left: 13px;
+  font-size: 20px !important;
+  color: #32292f;
+}
+
+.h2-main {
+  margin-top: 20px;
+  font-size: 25px !important;
+}
+
+#hide,
+#show {
+  float: right;
+  margin: 0px 10px;
+  color: whitesmoke;
+}
+
+#hide:hover,
+#show:hover {
+  color: lightskyblue;
+}
+
+#show {
+  visibility: hidden;
+}
+
+#hide {
+  visibility: visible;
+  font-size: x-large;
+}
+
+.float-right {
+  float: right;
+}
+
+.sum-table {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sum-table td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+  padding: 10px 5px;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.sum-table .sum-col1 {
+  font-weight: bold;
+  background-color: rgba(135, 206, 250, 0.3);
+  text-align: left;
+  vertical-align: top;
+}
+
+.sum-table .sum-col2 {
+  text-align: left;
+  vertical-align: top;
+  max-width: 400px;
+}
+
+.button {
+  background-color: #575366;
+  border: none;
+  border-radius: 20px;
+  color: whitesmoke;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.button:hover {
+  background-color: #32292f;
+  color: lightskyblue;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.samenvatting {
+  color: darkslategray;
+}
+
+.section {
+  margin-top: 30px;
+  max-width: 85%;
+}
+
+svg {
+  height: 52px;
+  width: 50px;
+  padding-top: 5px;
+}
+
+svg circle {
+  stroke: black; 
+  stroke-width: 2;
+  fill: red;
+}
+
+svg text {
+  fill: black;
+  font-size: 20px;
+  font-weight: bold;
+}

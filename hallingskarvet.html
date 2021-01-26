@@ -1,0 +1,141 @@
+<!-- Caren Groenhuijzen
+NOVI Hogeschool - Webontwikkeling
+30-04-2020 -->
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Hallingskarvet</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Belangrijke informatie over nationaal park Hallingskarvet." />
+    <meta name="keywords" content="Noorwegen, natuur, nationaal park, nationale parken, natuurgebied, vakantie, bergen, hallingskarvet" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="css/eindopdracht.css" type="text/css" />
+    <link rel="stylesheet" href="css//hallingskarvet.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="grid-container">
+        
+        <div class="sidebar">
+            <a id="hide" href="#" aria-label="Sluit de navigatiebar">&times;</a>
+            <a id="show" href="#">Open navigatie</a>
+            <div class="hide">
+                <h2 class="h2-nav">Navigatie</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="folgefonna.html" class="nav-link">1: Nationaal park Folgefonna</a></li>
+                        <li><a href="hallingskarvet.html" class="nav-link">2: Nationaal park Hallingskarvet</a></li>
+                        <li><a href="jotunheimen.html" class="nav-link">3: Nationaal park Jotunheimen</a></li>
+                        <li><a href="lomsdal.html" class="nav-link">4: Nationaal park Lomsdal-Visten</a></li>
+                        <li><a href="sjunkhatten.html" class="nav-link">5: Nationaal park Sjunkhatten</a></li>
+                        <li><a href="seiland.html" class="nav-link">6: Nationaal park Seiland</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul> 
+                </nav>
+                <img src="Afbeeldingen/overzicht.png" alt="kaart van Noorwegen met nationale parken gemarkeerd" width="310">
+            </div>
+        </div>
+        
+        <header> Eindopdracht Webontwikkeling - Nationale parken in Noorwegen </header>
+        
+        <main class="content"> 
+            <article>
+                <h1> 
+                    <svg>
+                        <circle cx="25" cy="25" r="20"/>
+                        <text x="19" y="32">2</text>
+                    </svg>
+                    Nationaal park Hallingskarvet
+                </h1>
+
+                <section class="section">
+                    <h2 class="h2-main">Samenvatting</h2>
+                    <table class="sum-table">
+                        <tr>
+                        <td class="sum-col1">Provincies</td>
+                        <td class="sum-col2">Viken en Vestland</td>
+                        </tr>
+                        <tr>
+                        <td class="sum-col1">Oppervlakte</td>
+                        <td class="sum-col2">450 km²</td>
+                        </tr>
+                        <tr>
+                        <td class="sum-col1">Bezienswaardigheid</td>
+                        <td class="sum-col2">Rendierkudde</td>
+                        </tr>
+                    </table>
+
+                    <p class="samenvatting">
+                        Nationaal park Hallingskarvet ligt in de provincies Viken en Vestland. Dit nationale park omvat onder andere
+                        het Hallingskarv plateau en de bergketen Hallingskarvet. Het totale oppervlakte is 450 km². Dit park
+                        is het leefgebied van een grote kudde wilde rendieren.
+                    </p>
+                </section>
+                
+                <section class="section">
+                    <h2 class="h2-main">Seizoenen in Hallingskarvet</h2>
+
+                    <p>
+                        Nationaal park Hallingskarvet ligt in centraal Noorwegen. Door deze ligging is het onderscheid tussen de
+                        vier seizoenen goed te zien. Er zijn koude winters met sneeuw en warme zomers. 
+                        In de lente bloeien er veel bloemen en in de herfst kun je genieten van typische herfstkleuren.
+                        Dit park is dan ook goed te bezoeken in alle seizoenen. 
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2 class="h2-main">Rendierkudde</h2>
+
+                    <p>
+                        Een belangrijke reden voor de bescherming van het nationaal park Hallingskarvet is de wilde rendierkudde die
+                        hier rondloopt. De kudde loopt voornamelijk rond op de heide onder het Hallingskarv plateau. De kans om 
+                        rendieren te zien is aanwezig, maar ga er niet van uit. Mocht je ze wel tegenkomen, hou dan ten alle tijden
+                        voldoende afstand. Loop niet op de rendieren af, blijf zo veel mogelijk op de uitgezette paden.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2 class="h2-main">Fotogalerij</h2>
+
+                    <figure>
+                        <figcaption>In het onderstaande canvas kunnen afbeelding weergegeven worden. <br>
+                            Zie nationaal park Hallingskarvet veranderen met de seizoenen, of bekijk een foto van de rendierkudde.<br>
+                            Rendieren (Strässler, 2014), Winter (Herheim, 2017), Lente (K, 2015), Zomer (Jos Images, 2017), Herfst (Tengs, 2015)
+                        </figcaption>
+                        <canvas id="img-canvas" width="606" height="400"></canvas>
+                        <div>
+                            <button class="button" onclick="draw_rendier();">Rendieren</button>
+                            <button class="button" onclick="draw_winter();">Winter</button>
+                            <button class="button" onclick="draw_lente();">Lente</button>
+                            <button class="button" onclick="draw_zomer();">Zomer</button>
+                            <button class="button" onclick="draw_herfst();">Herfst</button>
+                            <button class="button" onclick="clear_image();">Leeg canvas</button>
+                        </div> 
+                    </figure>
+                </section>
+                
+            </article>
+        </main>
+
+        <footer> Gemaakt door Caren Groenhuijzen, NOVI Hogeschool - Webontwikkeling, 30-04-2020 </footer>
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous"></script>
+
+    <script src="js/navHide.js"></script>
+    <script src="js/canvas.js"></script>
+    
+</body>
+
+</html>

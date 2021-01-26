@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Contact</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Neem contact op voor meer informatie over nationale parken in Noorwegen" />
+    <meta name="keywords" content="Noorwegen, natuur, nationaal park, nationale parken, natuurgebied, vakantie, bergen, contact" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="css/eindopdracht.css" type="text/css" />
+    <link rel="stylesheet" href="css/contact.css" type="text/css" />
+    
+</head>
+
+<body>
+    <div class="grid-container">
+        
+        <div class="sidebar">
+            <a id="hide" href="#" aria-label="Sluit de navigatiebar">&times;</a>
+            <a id="show" href="#">Open navigatie</a>
+            <div class="hide">
+                <h2 class="h2-nav">Navigatie</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="folgefonna.html" class="nav-link">1: Nationaal park Folgefonna</a></li>
+                        <li><a href="hallingskarvet.html" class="nav-link">2: Nationaal park Hallingskarvet</a></li>
+                        <li><a href="jotunheimen.html" class="nav-link">3: Nationaal park Jotunheimen</a></li>
+                        <li><a href="lomsdal.html" class="nav-link">4: Nationaal park Lomsdal-Visten</a></li>
+                        <li><a href="sjunkhatten.html" class="nav-link">5: Nationaal park Sjunkhatten</a></li>
+                        <li><a href="seiland.html" class="nav-link">6: Nationaal park Seiland</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul> 
+                </nav>
+                <img src="Afbeeldingen/overzicht.png" alt="kaart van Noorwegen met nationale parken gemarkeerd" width="310">
+            </div>
+        </div>
+        
+        <header> Eindopdracht Webontwikkeling - Nationale parken in Noorwegen </header>
+   
+        <main class="content"> 
+            <h1> Contact </h1>
+
+            <form name="form" id="contact-form" action="#" method="post" novalidate>
+                <ul>
+                    <li>
+                        <label for="naam">Naam:</label>
+                        <input type="text" id="naam" name="user_naam">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </li>
+                    <li>
+                        <label for="geboortedatum">Geboortedatum:</label>
+                        <input type ="text" id="geboortedatum" name="user_datum">
+                    </li>
+                    <li>
+                        <label for="bericht">Bericht:</label>
+                        <textarea id="bericht" name="user_bericht"></textarea>
+                    </li>
+                    <li>
+                        <label for="nieuwsbrief">Wil je de nieuwsbrief ontvangen?
+                        <input type="checkbox" id="nieuwsbrief" name="check" checked></label>
+                    </li>
+                    <li>
+                        <button class="button" type="submit">Verstuur</button>
+                    </li>
+                </ul>
+            </form>
+
+            <div id="result"></div>
+        </main>
+
+        <footer> Gemaakt door Caren Groenhuijzen, NOVI Hogeschool - Webontwikkeling, 30-04-2020 </footer>
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous">
+    </script>
+
+    <script src="js/navHide.js"></script>
+    <script src="js/validateForm.js"></script>
+    <script src="js/submitForm.js"></script>
+
+</body>
+
+</html>

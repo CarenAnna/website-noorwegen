@@ -1,0 +1,39 @@
+/* Caren Groenhuijzen
+NOVI Hogeschool - Webontwikkeling
+30-04-2020 */
+
+form {
+  float: left;
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 350px;
+  padding: 1em;
+  border: 2px solid #32292f;
+  border-radius: 20px;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 130px;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 315px;
+  box-sizing: border-box;
+  border: 1px solid #575366;
+}
+
+#nieuwsbrief {
+  width: 15px;
+  float: right;
+}
+
+#result {
+  margin-top: 15px;
+}

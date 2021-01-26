@@ -1,0 +1,158 @@
+<!-- Caren Groenhuijzen
+NOVI Hogeschool - Webontwikkeling
+30-04-2020 -->
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Lomsdal-Visten</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Belangrijke informatie over nationaal park Lomsdal-Visten." />
+    <meta name="keywords" content="Noorwegen, natuur, nationaal park, nationale parken, natuurgebied, vakantie, bergen, lomsdal, visten" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="css/eindopdracht.css" type="text/css" />
+    <link rel="stylesheet" href="css/lomsdal.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="grid-container">
+        
+        <div class="sidebar">
+            <a id="hide" href="#" aria-label="Sluit de navigatiebar">&times;</a>
+            <a id="show" href="#">Open navigatie</a>
+            <div class="hide">
+                <h2 class="h2-nav">Navigatie</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="folgefonna.html" class="nav-link">1: Nationaal park Folgefonna</a></li>
+                        <li><a href="hallingskarvet.html" class="nav-link">2: Nationaal park Hallingskarvet</a></li>
+                        <li><a href="jotunheimen.html" class="nav-link">3: Nationaal park Jotunheimen</a></li>
+                        <li><a href="lomsdal.html" class="nav-link">4: Nationaal park Lomsdal-Visten</a></li>
+                        <li><a href="sjunkhatten.html" class="nav-link">5: Nationaal park Sjunkhatten</a></li>
+                        <li><a href="seiland.html" class="nav-link">6: Nationaal park Seiland</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul> 
+                </nav>
+                <img src="Afbeeldingen/overzicht.png" alt="kaart van Noorwegen met nationale parken gemarkeerd" width="310">
+            </div>
+        </div>
+        
+        <header> Eindopdracht Webontwikkeling - Nationale parken in Noorwegen </header>
+        
+        <main class="content"> 
+            <article>
+                <h1> 
+                    <svg>
+                        <circle cx="25" cy="25" r="20"/>
+                        <text x="19" y="32">4</text>
+                    </svg>
+                    Nationaal park Lomsdal-Visten
+                </h1>
+                
+                <section class="section">
+                    <h2 class="h2-main">Samenvatting</h2>
+
+                    <table class="sum-table">
+                        <tr>
+                        <td class="sum-col1">Provincie</td>
+                        <td class="sum-col2">Nordland</td>
+                        </tr>
+                        <tr>
+                        <td class="sum-col1">Oppervlakte</td>
+                        <td class="sum-col2">1102 km²</td>
+                        </tr>
+                        <tr>
+                        <td class="sum-col1">Bezienswaardigheid</td>
+                        <td class="sum-col2">Breivasstinden</td>
+                        </tr>
+                    </table>
+
+                    <p class="samenvatting">
+                        Nationaal park Lomsdal-Visten ligt in de provincie Nordland. Het park heeft een oppervlakte van 1102 km².
+                        Het landschap van dit park vertoont grote verscheidenheid. Er zijn veel bergen rivieren en bossen.
+                        Karstlandschap en grotten zijn ook te vinden in dit park. Breivasstinden is de hoogste berg in Lomsdal-Visten.
+                        Vanaf de top heb je een mooi uitzicht over het park.
+                    </p>
+                </section>
+                
+                <section class="section">
+                    <h2 class="h2-main">Breivasstinden</h2>
+
+                    <p>
+                        Breivasstinden is de hoogste berg van nationaal park Lomsdal-Visten met een hoogte van 1224 meter.
+                        Wie naar de top wil kan het beste komen in de zomer of eventueel de herfst. 
+                        Buiten deze seizoenen maakt de sneeuw het lastig om de top te bereiken. 
+                        Vanaf Borkamoen heen en weer naar de top is een flinke wandeling van bijna 10 uur.
+                        Vanaf de top heb je een mooi uitzicht over het park. Je ziet met name veel lagere bergtoppen 
+                        en meren in de omgeving.
+                    </p>
+                    
+                    <figure>
+                            <img src="Afbeeldingen/breivasstinden.jpg" alt="Breivasstinden onder sneeuw" width="600" class="zoom">
+                            <figcaption>Breivasstinden in de winter, bedekt met sneeuw (Johansen, 2005).</figcaption>
+                    </figure>
+                </section>
+
+                <section class="foto">
+                    <h2 class="h2-main">Landschap van Lomsdal-Visten</h2>
+
+                    <p>
+                        Het landschap van Lomsdal-Visten is heel uiteenlopend. Er is voor iedereen wat te vinden.
+                        Er zijn mooie toppen om te beklimmen, grotten te verkennen of rivieren en meren om bij te ontspannen.
+                        De beste manier om dit landschap te zien is met behulp van foto's. Open de fotogalerij hieronder.
+                    </p>
+
+                    <button type="button" id="open" class="button">Open fotogalerij</button>
+                    <div class="galerij">
+                        <h3>Fotogalerij</h3>
+                        <div class="container-img">
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal1.jpg" alt=""></div>
+                            <div class="staand"><img src="Afbeeldingen/lomsdal2.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal3.jpg" alt=""></div>
+                            <div class="groot"><img src="Afbeeldingen/lomsdal5.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal6.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal7.jpg" alt=""></div>
+                            <div class="staand"><img src="Afbeeldingen/lomsdal4.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal8.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal9.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal10.jpg" alt=""></div>
+                            <div class="groot"><img src="Afbeeldingen/lomsdal11.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal12.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal13.jpg" alt=""></div>
+                            <div class="groot"><img src="Afbeeldingen/lomsdal14.jpg" alt=""></div>
+                            <div class="groot"><img src="Afbeeldingen/lomsdal15.jpg" alt=""></div>
+                            <div class="staand"><img src="Afbeeldingen/lomsdal16.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal17.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal18.jpg" alt=""></div>
+                            <div class="normaal"><img src="Afbeeldingen/lomsdal19.jpg" alt=""></div>
+                        </div>
+                        <button type="button" id="sluit" class="button">Sluit fotogalerij</button>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+
+        <footer> Gemaakt door Caren Groenhuijzen, NOVI Hogeschool - Webontwikkeling, 30-04-2020 </footer>
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous">
+    </script>
+
+    <script src="js/navHide.js"></script>
+    <script src="js/openGalerij.js"></script>
+    <script src="js/vergrootAfbeelding.js"></script>
+    
+</body>
+
+</html>

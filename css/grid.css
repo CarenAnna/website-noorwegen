@@ -1,0 +1,46 @@
+/* Caren Groenhuijzen
+NOVI Hogeschool - Webontwikkeling
+30-04-2020 */
+
+.grid-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px auto 40px;
+  gap: 1px 1px;
+  grid-template-areas:
+    "header header header header header"
+    "sidebar content content content content"
+    "footer footer footer footer footer";
+}
+
+.sidebar {
+  padding-top: 5px;
+  grid-area: sidebar;
+  background-color: #575366;
+}
+
+header {
+  grid-area: header;
+  padding-top: 5px;
+  padding-left: 13px;
+  font-weight: bold;
+  background-color: #32292f;
+  color: whitesmoke;
+}
+
+.content {
+  grid-area: content;
+  padding-left: 20px;
+  background-color: #d1e3dd;
+}
+
+footer {
+  grid-area: footer;
+  padding-top: 5px;
+  padding-left: 13px;
+  font-weight: bold;
+  background-color: #32292f;
+  color: whitesmoke;
+}
